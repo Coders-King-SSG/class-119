@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realtime Image Recognition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body background="https://i.pinimg.com/originals/3b/f3/c3/3bf3c3264f90fe99a7463d9bba8fe536.jpg">
+    <center>
+        <h3 class="btn btn-success heading">
+            Realtime Image Recognition
+            <hr>
+            <center>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 items">
+                    Objects trained:
+                    <br>
+                    <div class="btn btn-warning objects">
+                        Pencil Box | Water Bottle | Phone | Notebook
+                    </div>
+                </div>
+            </center>
+        </h3>
+        <div style="margin-top: 20px;">
+            <div class="results col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="dummy_div">
+            <section class="first">
+                <h5>
+                    <label>Pencil Box :</label>
+                    <progress class="slider" id="pencil_box" value="50" max="100"></progress>
+                </h5>
+            </section>
+            <section class="second">
+                <h5>
+                    <label>Water Bottle :</label>
+                    <progress class="slider" id="water-bottle" value="50" max="100"></progress>
+                </h5>
+            </section>
+            <section class="third">
+                <h5>
+                    <label for="">Phone :</label>
+                    <progress class="slider" id="phone" value="50" max="100"></progress>
+                </h5>
+            </section>
+            <section class="fourth">
+                <h5>
+                    
+                    <label for="">Notebook :</label>
+                    <progress class="slider" id="notebook" value="50" max="100"></progress>
+                </h5>
+            </section></div>
+        </div>
+        <div id="webcamSection" class="col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+    </div>
+        
+    </center>
+    <div class="footer">
+        <h6>&copy; Shourya Sagar Gupta,<br>
+        2021</h6>
+    </div>
+</body>
+</html>
